@@ -18,8 +18,11 @@ var (
 
 // main is the entry point for all Go programs.
 func main() {
-	//只开启一个线程，否则结果和书上的不一致
-	runtime.GOMAXPROCS(1)
+	//只观察到2，3两种情况（等于2的情况较多）
+	//runtime.GOMAXPROCS(1)
+
+	//观察到2，3，4三种情况（等于2的情况较多）
+	runtime.GOMAXPROCS(2)
 
 	// Add a count of two, one for each goroutine.
 	wg.Add(2)
