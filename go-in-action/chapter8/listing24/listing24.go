@@ -31,6 +31,7 @@ type (
 )
 
 func main() {
+	//地址无法访问
 	uri := "http://ajax.googleapis.com/ajax/services/search/web?v=1.0&rsz=8&q=golang"
 
 	// Issue the search against Google.
