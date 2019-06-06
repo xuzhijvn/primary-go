@@ -2,7 +2,7 @@
 // operations. Combining goroutines and channels with
 // select is a powerful feature of Go.
 
-package main
+package _select
 
 import "time"
 import "fmt"
