@@ -1,4 +1,5 @@
-package reflect
+//使用反射传递函数
+package main
 
 import (
 	"fmt"
@@ -10,7 +11,7 @@ type T struct{}
 func main() {
 	t := &T{}
 
-	res := t.compute(11, 11, "Add")
+	res := t.compute(11, 13, "Multi")
 
 	fmt.Println(res)
 
@@ -25,11 +26,11 @@ func (t *T) compute(a int, b int, method string) int64 {
 }
 
 //方法名首字母需要大写
-func (t *T) Add(a int, b int) int {
+func (t *T) Add(a, b int) int {
 	return a + b
 }
 
 //方法名首字母需要大写
-func (t *T) Multi(a int, b int) int {
+func (t *T) Multi(a, b int) int {
 	return a * b
 }
