@@ -1,4 +1,4 @@
-//使用反射传递函数
+//使用反射实现方法调用
 package main
 
 import (
