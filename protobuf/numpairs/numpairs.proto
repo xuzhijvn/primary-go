@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package numpairs;
+
+message NumPairs {
+  repeated NumPair pair = 1;
+}
+
+message NumPair {
+  int32 odd = 1;
+  int32 even = 2;
+}
+
+

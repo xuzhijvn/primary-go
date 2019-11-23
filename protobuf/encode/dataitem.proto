@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package main;
+
+message DataItem {
+    int64  oddA  = 1;
+    int64  evenA = 2;
+    int32  oddB  = 3;
+    int32  evenB = 4;
+    float  small = 5;
+    float  big   = 6;
+    string short = 7;
+    string long  = 8;
+}
